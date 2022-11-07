@@ -76,7 +76,7 @@ public class Invoice  {
     
     
     
-    private Date timestamp;
+    private Long timestamp;
 
     @PostPersist
     public void onPostPersist(){

@@ -10,7 +10,7 @@ import lombok.*;
 public class InvoiceCanceled extends AbstractEvent {
 
     private Long invoiceId;
-    private Date timestamp;
+    private Long timestamp;
 
     public InvoiceCanceled(Invoice aggregate){
         super(aggregate);

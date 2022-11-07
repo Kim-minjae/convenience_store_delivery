@@ -16,7 +16,7 @@ public class Delivery {
     private Long reservationId;
     private Integer customerId;
     private Long invoicedId;
-    private Date timestamp;
+    private Long timestamp;
 }
 
 
