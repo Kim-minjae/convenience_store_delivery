@@ -185,13 +185,13 @@
     - 배송상태가 바뀔 때 마다 카카오톡으로 알림을 보낸다
 
 
-### 모델 수정
+### 모델 수정 ★ 필요하면 추가 및 삭제.
 
 ![image](https://user-images.githubusercontent.com/487999/79684176-4e4c7800-826a-11ea-8deb-b7b053e5d7c6.png)
     
     - 수정된 모델은 모든 요구사항을 커버함.
 
-### 비기능 요구사항에 대한 검증
+### 비기능 요구사항에 대한 검증 ★ 필요하면 추가 및 삭제.
 
 ![image](https://user-images.githubusercontent.com/487999/79684184-5c9a9400-826a-11ea-8d87-2ed1e44f4562.png)
 
@@ -217,21 +217,84 @@
 
 # 구현:
 
-분석/설계 단계에서 도출된 헥사고날 아키텍처에 따라, 각 BC별로 대변되는 마이크로 서비스들을 스프링부트와 파이선으로 구현하였다. 구현한 각 서비스를 로컬에서 실행하는 방법은 아래와 같다 (각자의 포트넘버는 8081 ~ 808n 이다)
+분석/설계 단계에서 도출된 헥사고날 아키텍처에 따라, 각 BC별로 대변되는 마이크로 서비스들을 스프링부트로 구현하였다. 구현한 각 서비스를 로컬에서 실행하는 방법은 아래와 같다. 
 
 ```
-cd app
+cd myParcel
 mvn spring-boot:run
 
-cd pay
+cd reservation
 mvn spring-boot:run 
 
-cd store
+cd delivery
 mvn spring-boot:run  
 
-cd customer
-python policy-handler.py 
+cd warehouse
+mvn spring-boot:run 
+
 ```
+## 서비스 개념도
+
+![image](https://user-images.githubusercontent.com/112861813/200238022-07da912f-d526-4af8-881f-1079d3f6e11e.png)
+
+## 구성도(?)
+
+![image](https://user-images.githubusercontent.com/112861813/200268856-2c65ecc3-884c-41d4-8beb-92ef6f58de4b.png)
+
+## DB 구성도(?)
+
+![image](https://user-images.githubusercontent.com/112861813/200268933-13bf47fb-d49a-493a-897c-3a7fba404df4.png)
+
+
+
+
+## CQRS
+
+- 택배 배송 예약, 배송 송장 발급 및 결제, 배송 현황 등 총 Status 에 대하여 고객(Customer)이 조회 할 수 있도록 CQRS 로 구현하였다.
+
+- Reservation, Delivery, Warehouse, Parcel 개별 Aggregate Status 를 통합 조회하여 성능 Issue 를 사전에 예방할 수 있다.
+  비동기식으로 처리되어 발행된 이벤트 기반 Kafka 를 통해 수신/처리 되어 별도 Table 에 관리한다
+
+- Table 모델링 (Reservation)
+
+![image](https://user-images.githubusercontent.com/112861813/200235059-b2549989-3620-4389-af07-7587e985bc19.png)
+
+- Table 모델링 (Invoice)
+
+![image](https://user-images.githubusercontent.com/112861813/200235334-70d136a8-9259-47aa-8c0d-de6c70083062.png)
+
+- Table 모델링 (Delivery)
+
+![image](https://user-images.githubusercontent.com/112861813/200235873-aeef20de-f94e-43e8-b444-b6286c4194d6.png)
+
+- Table 모델링 (Parcel)
+
+![image](https://user-images.githubusercontent.com/112861813/200236512-7ee53cf6-e092-4a20-b897-ad5f13e4d2f5.png)
+
+- view Page 
+
+
+## -----------------여기까지 수정 기능 캡쳐 필요
+
+# 운영
+
+## CI-CD 환경 구성도
+
+![image](https://user-images.githubusercontent.com/112861813/200269343-8ea9ea2b-13ee-4067-91cc-d6437f71cee3.png)
+
+
+## 추가  ->>> 뭘 넣어야 할지 모르겠음 ㅠㅠ
+
+
+
+
+
+
+
+
+
+
+
 
 ## DDD 의 적용
 
