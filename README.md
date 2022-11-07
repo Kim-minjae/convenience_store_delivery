@@ -259,6 +259,13 @@ python policy-handler.py
 
 ![image](https://user-images.githubusercontent.com/112861813/200236512-7ee53cf6-e092-4a20-b897-ad5f13e4d2f5.png)
 
+- view Page 
+
+### ★ 자료 화면 입력 예시 - 숙소예약 참조
+
+![image](https://user-images.githubusercontent.com/112861813/200236706-4a0c9ff0-fbc8-46ec-8902-5481e5b02807.png)
+![image](https://user-images.githubusercontent.com/112861813/200236716-e2314c38-a317-4268-a531-e15144bcc162.png)
+
 
 ## -----------------여기까지 수정.
 
