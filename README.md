@@ -185,13 +185,13 @@
     - 배송상태가 바뀔 때 마다 카카오톡으로 알림을 보낸다
 
 
-### 모델 수정
+### 모델 수정 ★ 수정 모델 이미지 업데이트 or 삭제
 
 ![image](https://user-images.githubusercontent.com/487999/79684176-4e4c7800-826a-11ea-8deb-b7b053e5d7c6.png)
     
     - 수정된 모델은 모든 요구사항을 커버함.
 
-### 비기능 요구사항에 대한 검증
+### 비기능 요구사항에 대한 검증 ★ 수정 모델 이미지 업데이트 or 삭제
 
 ![image](https://user-images.githubusercontent.com/487999/79684184-5c9a9400-826a-11ea-8d87-2ed1e44f4562.png)
 
@@ -235,6 +235,32 @@ python policy-handler.py
 ## 서비스 개념도
 
 ![image](https://user-images.githubusercontent.com/112861813/200238022-07da912f-d526-4af8-881f-1079d3f6e11e.png)
+
+## CQRS
+
+- 택배 배송 예약, 배송 송장 발급 및 결제, 배송 현황 등 총 Status 에 대하여 고객(Customer)이 조회 할 수 있도록 CQRS 로 구현하였다.
+
+- Reservation, Delivery, Warehouse, Parcel 개별 Aggregate Status 를 통합 조회하여 성능 Issue 를 사전에 예방할 수 있다.
+  비동기식으로 처리되어 발행된 이벤트 기반 Kafka 를 통해 수신/처리 되어 별도 Table 에 관리한다
+
+- Table 모델링 (Reservation)
+
+![image](https://user-images.githubusercontent.com/112861813/200235059-b2549989-3620-4389-af07-7587e985bc19.png)
+
+- Table 모델링 (Invoice)
+
+![image](https://user-images.githubusercontent.com/112861813/200235334-70d136a8-9259-47aa-8c0d-de6c70083062.png)
+
+- Table 모델링 (Delivery)
+
+![image](https://user-images.githubusercontent.com/112861813/200235873-aeef20de-f94e-43e8-b444-b6286c4194d6.png)
+
+- Table 모델링 (Parcel)
+
+![image](https://user-images.githubusercontent.com/112861813/200236512-7ee53cf6-e092-4a20-b897-ad5f13e4d2f5.png)
+
+
+
 
 ## DDD 의 적용
 
