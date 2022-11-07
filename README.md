@@ -274,7 +274,21 @@ mvn spring-boot:run
 - view Page 
 
 
-## -----------------여기까지 수정.
+## -----------------여기까지 수정 기능 캡쳐 필요
+
+# 운영
+
+## CI-CD 환경 구성도
+
+![image](https://user-images.githubusercontent.com/112861813/200269343-8ea9ea2b-13ee-4067-91cc-d6437f71cee3.png)
+
+
+## 추가
+
+
+
+
+
 
 
 
