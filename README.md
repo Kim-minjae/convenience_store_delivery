@@ -237,6 +237,10 @@ mvn spring-boot:run
 
 ![image](https://user-images.githubusercontent.com/112861813/200238022-07da912f-d526-4af8-881f-1079d3f6e11e.png)
 
+## 구성도(?)
+
+
+
 ## CQRS
 
 - 택배 배송 예약, 배송 송장 발급 및 결제, 배송 현황 등 총 Status 에 대하여 고객(Customer)이 조회 할 수 있도록 CQRS 로 구현하였다.
@@ -261,11 +265,6 @@ mvn spring-boot:run
 ![image](https://user-images.githubusercontent.com/112861813/200236512-7ee53cf6-e092-4a20-b897-ad5f13e4d2f5.png)
 
 - view Page 
-
-### ★ 자료 화면 입력 예시 - 숙소예약 참조
-
-![image](https://user-images.githubusercontent.com/112861813/200236706-4a0c9ff0-fbc8-46ec-8902-5481e5b02807.png)
-![image](https://user-images.githubusercontent.com/112861813/200236716-e2314c38-a317-4268-a531-e15144bcc162.png)
 
 
 ## -----------------여기까지 수정.
