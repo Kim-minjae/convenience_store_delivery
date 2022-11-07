@@ -13,6 +13,6 @@ public class Reservered extends AbstractEvent {
     private Long reservedTimestamp;
     private Object receiverAddress;
     private String receiverPhoneNumber;
-    private Date dueDate;
+    private String dueDate;
     private Long reservationId;
 }

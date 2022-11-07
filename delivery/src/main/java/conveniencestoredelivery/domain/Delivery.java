@@ -147,11 +147,10 @@ public class Delivery  {
     }
     public static void returns(InvoiceCanceled invoiceCanceled){
 
-        /** Example 1:  new item 
+
         Delivery delivery = new Delivery();
         repository().save(delivery);
 
-        */
 
         /** Example 2:  finding and process
         

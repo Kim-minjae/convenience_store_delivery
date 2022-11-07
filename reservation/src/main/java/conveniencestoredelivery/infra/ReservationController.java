@@ -18,7 +18,17 @@ public class ReservationController {
     @Autowired
     ReservationRepository reservationRepository;
 
+    @PostMapping("/reservation")
+    public void makeReservation(Sender sender) {
+        Reservation reservation = new Reservation();
 
+        reservation.setCustomerId(sender.getCustomerId());
+        reservation.setReceiverPhoneNumber(sender.getReceiverPhoneNumber());
+        reservation.setReceiverAddress(sender.getReceiverAddress());
+
+        reservationRepository.save(reservation);
+
+    }
 
 
 }

@@ -3,6 +3,9 @@ package conveniencestoredelivery.domain;
 import javax.persistence.*;
 import java.util.List;
 import java.util.Date;
+
+import conveniencestoredelivery.MyParcelApplication;
+import conveniencestoredelivery.infra.MyParcelRepository;
 import lombok.Data;
 
 @Entity
@@ -20,9 +23,35 @@ public class MyParcel {
         private Long parcelId;
         private String status;
         private Long updateTimeStamp;
-        private String receiverAddress;
+        private Object receiverAddress;
         private String senderAddress;
         private String dueDate;
 
 
+        public static MyParcelRepository repository(){
+                MyParcelRepository reservationRepository = MyParcelApplication.applicationContext.getBean(MyParcelRepository.class);
+                return reservationRepository;
+        }
+
+        public static void reserved(Reservered reservered){
+                MyParcel myParcel = new MyParcel();
+                myParcel.setReservationId(reservered.getReservationId());
+                myParcel.setCustomerId(reservered.getCustomerId());
+                myParcel.setReceiverAddress(reservered.getReceiverAddress());
+                myParcel.setDueDate(reservered.getDueDate());
+                myParcel.setUpdateTimeStamp(System.currentTimeMillis());
+
+                repository().save(myParcel);
+
+        }
+
+        public static void delivered(DeliveryCompleted deliveryCompleted){
+                MyParcel myParcel = new MyParcel();
+                myParcel.setDeliveryId(deliveryCompleted.getDeliveryId());
+                myParcel.setCustomerId(deliveryCompleted.getCustomerId());
+                myParcel.setInvoiceId(deliveryCompleted.getInvoicedId());
+
+                repository().save(myParcel);
+
+        }
 }

@@ -14,7 +14,10 @@ import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Service;
 import conveniencestoredelivery.domain.*;
 
+import java.util.Optional;
 
+
+//CQRS
 @Service
 @Transactional
 public class PolicyHandler{
@@ -28,12 +31,13 @@ public class PolicyHandler{
         Reservered event = reservered;
         System.out.println("\n\n##### listener UpdateState : " + reservered + "\n\n");
 
-
-        
-
         // Sample Logic //
-
-        
+        try{
+            if(!reservered.validate()) return;
+            MyParcel.reserved(event);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
     @StreamListener(value=KafkaProcessor.INPUT, condition="headers['type']=='DeliveryCompleted'")
@@ -43,10 +47,13 @@ public class PolicyHandler{
         System.out.println("\n\n##### listener UpdateState : " + deliveryCompleted + "\n\n");
 
 
-        
-
         // Sample Logic //
-
+        try {
+            if(!deliveryCompleted.validate()) return;
+            MyParcel.delivered(deliveryCompleted);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         
 
     }

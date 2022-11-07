@@ -78,45 +78,21 @@ public class Parcel  {
 
     public static void scheculeParcelInbound(InvoiceIssued invoiceIssued){
 
-        /** Example 1:  new item 
-        Parcel parcel = new Parcel();
-        repository().save(parcel);
-
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(invoiceIssued.get???()).ifPresent(parcel->{
-            
-            parcel // do something
+        repository().findById(Long.valueOf(invoiceIssued.getInvoiceId())).ifPresent(parcel -> {
+            parcel.setStatus("inbounded");
             repository().save(parcel);
-
-
-         });
-        */
+        });
 
         
     }
+    //Compensation  
     public static void cancelParcelInboundSchedule(InvoiceCanceled invoiceCanceled){
 
-        /** Example 1:  new item 
-        Parcel parcel = new Parcel();
-        repository().save(parcel);
-
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(invoiceCanceled.get???()).ifPresent(parcel->{
-            
-            parcel // do something
+        repository().findById(Long.valueOf(invoiceCanceled.getInvoiceId())).ifPresent(parcel -> {
+            parcel.setStatus("canceled");
             repository().save(parcel);
+        });
 
-
-         });
-        */
-
-        
     }
 
 
