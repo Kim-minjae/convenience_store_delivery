@@ -19,7 +19,7 @@ public class MyParcel {
         private Long deliveryId;
         private Long parcelId;
         private String status;
-        private Date updateTimeStamp;
+        private Long updateTimeStamp;
         private String receiverAddress;
         private String senderAddress;
         private String dueDate;

@@ -12,5 +12,5 @@ public class LoadingCompleted extends AbstractEvent {
     private String invoiceId;
     private Long parcelId;
     private String status;
-    private Date outboundTimeStamp;
+    private Long outboundTimeStamp;
 }

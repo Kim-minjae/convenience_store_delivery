@@ -10,7 +10,7 @@ import lombok.*;
 public class Reservered extends AbstractEvent {
 
     private Integer customerId;
-    private Date reservedTimestamp;
+    private Long reservedTimestamp;
     private Object receiverAddress;
     private String receiverPhoneNumber;
     private Date dueDate;

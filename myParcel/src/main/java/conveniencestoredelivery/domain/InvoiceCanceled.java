@@ -10,5 +10,5 @@ import lombok.*;
 public class InvoiceCanceled extends AbstractEvent {
 
     private Long invoiceId;
-    private Date timestamp;
+    private Long timestamp;
 }

@@ -68,7 +68,7 @@ public class MyParcelViewHandler {
             if (!invoiceCanceled.validate()) return;
                 // view 객체 조회
 
-                List<MyParcel> myParcelList = myParcelRepository.findByInvoiceId(invoiceCanceled.getId());
+                List<MyParcel> myParcelList = myParcelRepository.findByInvoiceId(invoiceCanceled.getInvoiceId());
                 for(MyParcel myParcel : myParcelList){
                     // view 객체에 이벤트의 eventDirectValue 를 set 함
                     myParcel.setStatus("InvoiceCancled");

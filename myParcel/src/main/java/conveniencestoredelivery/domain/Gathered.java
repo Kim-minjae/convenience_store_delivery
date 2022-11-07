@@ -13,5 +13,5 @@ public class Gathered extends AbstractEvent {
     private String status;
     private Long deliveryId;
     private Long invoicedId;
-    private Date timestamp;
+    private Long timestamp;
 }

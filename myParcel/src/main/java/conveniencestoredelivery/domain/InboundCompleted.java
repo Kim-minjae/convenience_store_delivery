@@ -12,5 +12,5 @@ public class InboundCompleted extends AbstractEvent {
     private String invoiceId;
     private Long parcelId;
     private String status;
-    private Date inboundTimeStamp;
+    private Long inboundTimeStamp;
 }
