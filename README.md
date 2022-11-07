@@ -232,6 +232,9 @@ mvn spring-boot:run
 cd customer
 python policy-handler.py 
 ```
+## 서비스 개념도
+
+![image](https://user-images.githubusercontent.com/112861813/200238022-07da912f-d526-4af8-881f-1079d3f6e11e.png)
 
 ## DDD 의 적용
 
