@@ -17,7 +17,7 @@ public class InvoiceIssued extends AbstractEvent {
     private Object receiverAddress;
     private String receiverPhoneNumber;
     private Date dueDate;
-    private Date timestamp;
+    private Long timestamp;
 }
 
 
