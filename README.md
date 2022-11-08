@@ -19,9 +19,9 @@
   - [구현:](#구현-)
     - [서비스 개념도](#서비스-개념도)
     - [서비스 구성도](#서비스-구성도)
-    - DB 구성도(#DB-구성도)
-    - 1.Saga (비동기식 호출)
-    - 2.CQRS
+    - [DB 구성도](#DB-구성도)
+    - [1.Saga (비동기식 호출)](#1.Saga-/-비동기식-호출)
+    - [2.CQRS](#2.CQRS)
     - 3.Compensation / Correlation
     - 4.Request / Response
     - 5.Circuit Breaker
@@ -245,8 +245,13 @@ mvn spring-boot:run
 ![image](https://user-images.githubusercontent.com/112861813/200268933-13bf47fb-d49a-493a-897c-3a7fba404df4.png)
 
     - Polyglot ?
+    
+   
 
-## CQRS
+## 1.Saga / 비동기식 호출
+
+
+## 2.CQRS
 
 - 택배 배송 예약, 배송 송장 발급 및 결제, 배송 현황 등 총 Status 에 대하여 고객(Customer)이 조회 할 수 있도록 CQRS 로 구현하였다.
 
