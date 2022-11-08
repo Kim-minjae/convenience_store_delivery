@@ -248,31 +248,14 @@ mvn spring-boot:run
 
 ## Saga/비동기식호출
 
+![image](https://user-images.githubusercontent.com/112861813/200504537-99833ecc-e15f-4394-ad02-9a5004fc3433.png)
+
 
 ## CQRS
 
-- 택배 배송 예약, 배송 송장 발급 및 결제, 배송 현황 등 총 Status 에 대하여 고객(Customer)이 조회 할 수 있도록 CQRS 로 구현하였다.
+![image](https://user-images.githubusercontent.com/112861813/200504619-83fa0861-fe44-4520-a78f-41da5f6b64ad.png)
 
-- Reservation, Delivery, Warehouse, Parcel 개별 Aggregate Status 를 통합 조회하여 성능 Issue 를 사전에 예방할 수 있다.
-  비동기식으로 처리되어 발행된 이벤트 기반 Kafka 를 통해 수신/처리 되어 별도 Table 에 관리한다
 
-- Table 모델링 (Reservation)
-
-![image](https://user-images.githubusercontent.com/112861813/200235059-b2549989-3620-4389-af07-7587e985bc19.png)
-
-- Table 모델링 (Invoice)
-
-![image](https://user-images.githubusercontent.com/112861813/200235334-70d136a8-9259-47aa-8c0d-de6c70083062.png)
-
-- Table 모델링 (Delivery)
-
-![image](https://user-images.githubusercontent.com/112861813/200235873-aeef20de-f94e-43e8-b444-b6286c4194d6.png)
-
-- Table 모델링 (Parcel)
-
-![image](https://user-images.githubusercontent.com/112861813/200236512-7ee53cf6-e092-4a20-b897-ad5f13e4d2f5.png)
-
-- view Page 
 
 ## Compensation/Correlation
 
