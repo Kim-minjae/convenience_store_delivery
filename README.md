@@ -187,10 +187,8 @@
   
 
 ## 헥사고날 아키텍처 다이어그램 도출
-   
-![image](https://user-images.githubusercontent.com/112861813/200458272-bc2c26a4-7c4f-4dd6-aad2-1a5836b7eb99.png)
 
-
+![image](https://user-images.githubusercontent.com/112861813/200508235-41681c6b-4de9-4cce-bfeb-64bf8aee78dd.png)
 
 
     - Chris Richardson, MSA Patterns 참고하여 Inbound adaptor와 Outbound adaptor를 구분함
@@ -222,68 +220,64 @@ mvn spring-boot:run
 
 ## 서비스 구성도
 
-![image](https://user-images.githubusercontent.com/112861813/200268856-2c65ecc3-884c-41d4-8beb-92ef6f58de4b.png)
+![image](https://user-images.githubusercontent.com/112861813/200508310-19873f43-9272-4b0c-aa7e-52e371aae88c.png)
 
 ## DB 구성도
 
-![image](https://user-images.githubusercontent.com/112861813/200506609-86390604-c63f-4abc-8f8d-5e6986656b08.png)
-
-
+![image](https://user-images.githubusercontent.com/112861813/200508352-b0ee0d20-6fe2-46ba-a9b5-58acf2f48b19.png)
 
 ## Saga/비동기식호출
 
-![image](https://user-images.githubusercontent.com/112861813/200506323-cab938ae-f8d1-466c-ab70-8f81604760f7.png)
+![image](https://user-images.githubusercontent.com/112861813/200508506-970fe648-57c2-489d-a4db-70a15be532b1.png)
 
 
 ## CQRS
 
-![image](https://user-images.githubusercontent.com/112861813/200506441-ccf010dc-2ed5-40f7-a6db-5b7899c99e69.png)
+![image](https://user-images.githubusercontent.com/112861813/200508632-8d2563cd-e933-48a1-ac3b-f4af615dae2e.png)
 
-![image](https://user-images.githubusercontent.com/112861813/200506474-523bc5f0-bc91-449f-9c2b-3323f19e4746.png)
+![image](https://user-images.githubusercontent.com/112861813/200508670-4844d540-3a28-42ee-9be4-cbf12bb9f136.png)
 
 
 ## Compensation/Correlation
 
-![image](https://user-images.githubusercontent.com/112861813/200506664-a9053753-6f24-4f26-874b-26722bccd49e.png)
-
+![image](https://user-images.githubusercontent.com/112861813/200508734-ea05de69-357f-4bd1-a588-64cb385275f4.png)
 
 
 ## Request/Response
 
-![image](https://user-images.githubusercontent.com/112861813/200506731-0bb71738-d23b-49d8-a4cb-c3bb74d99991.png)
+![image](https://user-images.githubusercontent.com/112861813/200508783-5b13bc39-ba6b-41c9-99cb-d5c99650278f.png)
 
-![image](https://user-images.githubusercontent.com/112861813/200506768-8380c7e2-2f97-48f6-8c6c-01ef68a2430b.png)
+![image](https://user-images.githubusercontent.com/112861813/200508831-874f38cd-d80c-46a0-a78c-049c2edc04ba.png)
 
 
 ## Circuit Breaker
 
-![image](https://user-images.githubusercontent.com/112861813/200504828-9ca53674-2fd6-4601-bcb3-432acb0d0337.png)
+![image](https://user-images.githubusercontent.com/112861813/200508899-d3e71cd4-f0b0-4369-bc48-1758f7862f0c.png)
 
-![image](https://user-images.githubusercontent.com/112861813/200504869-8b9cb4b7-4630-4486-8377-1da73c875b07.png)
+![image](https://user-images.githubusercontent.com/112861813/200508929-cac130c4-44ba-47ab-a160-ee452ba8a743.png)
 
-![image](https://user-images.githubusercontent.com/112861813/200504974-4e922fa7-ca6d-411a-9579-3eebfdbe7471.png)
+![image](https://user-images.githubusercontent.com/112861813/200508956-dc6998b3-0d79-4d23-af06-fd2b8d3013e8.png)
 
 
 ## Autosclae(HPA)
 
-![image](https://user-images.githubusercontent.com/112861813/200505035-377134b2-852d-447d-be50-76523e9219a2.png)
+![image](https://user-images.githubusercontent.com/112861813/200509017-393954b6-bba6-4b8d-8c01-703ea73a442a.png)
 
 
 ## Persistence Volume, ConfigMap, Secret
 
-![image](https://user-images.githubusercontent.com/112861813/200505133-a2b108a8-17ac-459e-9330-f245d7f4e276.png)
+![image](https://user-images.githubusercontent.com/112861813/200509066-98b66d76-2216-481b-b388-63ec6649a030.png)
 
-![image](https://user-images.githubusercontent.com/112861813/200505197-70803c54-eb91-4b4a-a632-30aaad62d7d3.png)
+![image](https://user-images.githubusercontent.com/112861813/200509129-42f67f7e-a180-49c8-97c8-aa0ff9fbb55f.png)
 
-![image](https://user-images.githubusercontent.com/112861813/200505262-f99c7cfb-e8f3-4d6c-99f9-beeab2b0bd5b.png)
+![image](https://user-images.githubusercontent.com/112861813/200509154-a9fbb03f-2f7f-4fdc-b5d9-fb0e50e74b85.png)
 
-![image](https://user-images.githubusercontent.com/112861813/200505325-e9c59ab0-2977-476c-8024-72f6f0056dc4.png)
+![image](https://user-images.githubusercontent.com/112861813/200509182-10227a30-7a2c-4ef5-9dcf-27404f9c39fb.png)
 
 
 ## Polyglot
 
-![image](https://user-images.githubusercontent.com/112861813/200505382-0357db4e-52f1-4609-a757-6172b51817c8.png)
-
+![image](https://user-images.githubusercontent.com/112861813/200509223-f9cc9400-16ad-404b-b286-33f3b27b3067.png)
 
 
 # 운영
