@@ -85,7 +85,7 @@ public class Parcel  {
 
         
     }
-    //Compensation  
+    //Compensation
     public static void cancelParcelInboundSchedule(InvoiceCanceled invoiceCanceled){
 
         repository().findById(Long.valueOf(invoiceCanceled.getInvoiceId())).ifPresent(parcel -> {
