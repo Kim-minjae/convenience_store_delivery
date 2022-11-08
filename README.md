@@ -20,9 +20,9 @@
     - [서비스 개념도](#서비스-개념도)
     - [서비스 구성도](#서비스-구성도)
     - [DB 구성도](#DB-구성도)
-    - [1.Saga/비동기식 호출)](#1.Saga/비동기식-호출)
+    - [1.Saga/비동기식 호출](#1.Saga/비동기식-호출)
     - [2.CQRS](#2.CQRS)
-    - 3.Compensation / Correlation
+    - [3.Compensation/Correlation](#3.Compensation/Correlation)
     - 4.Request / Response
     - 5.Circuit Breaker
     - 8.Autosclae(HPA)
