@@ -20,9 +20,9 @@
     - [서비스 개념도](#서비스-개념도)
     - [서비스 구성도](#서비스-구성도)
     - [DB 구성도](#DB-구성도)
-    - [1.Saga/비동기식 호출](#1.Saga/비동기식-호출)
-    - [2.CQRS](#2.CQRS)
-    - [3.Compensation/Correlation](#3.Compensation/Correlation)
+    - [Saga/비동기식 호출](#Saga/비동기식-호출)
+    - [CQRS](#CQRS)
+    - [Compensation/Correlation](#Compensation/Correlation)
     - 4.Request / Response
     - 5.Circuit Breaker
     - 8.Autosclae(HPA)
@@ -248,10 +248,10 @@ mvn spring-boot:run
     
    
 
-## 1.Saga/비동기식 호출
+## Saga/비동기식 호출
 
 
-## 2.CQRS
+## CQRS
 
 - 택배 배송 예약, 배송 송장 발급 및 결제, 배송 현황 등 총 Status 에 대하여 고객(Customer)이 조회 할 수 있도록 CQRS 로 구현하였다.
 
@@ -275,6 +275,8 @@ mvn spring-boot:run
 ![image](https://user-images.githubusercontent.com/112861813/200236512-7ee53cf6-e092-4a20-b897-ad5f13e4d2f5.png)
 
 - view Page 
+
+## Compensation/Correlation
 
 
 ## -----------------여기까지 수정 기능 캡쳐 필요
