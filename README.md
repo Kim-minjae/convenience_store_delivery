@@ -31,9 +31,9 @@
 
   - [운영](#운영)
     - [CI/CD 환경 구성도](#CI-CD-환경-구성도)
-    - [Gateway/Ingress](#Gateway/Ingress)
-    - [Deploy/Pipeline](#Deploy/Pipeline)
-    - [Zerodowntime deploy (Readiness probe)](#Zerodowntime-deploy(Readiness-probe))
+    - [Gateway/Ingress](#GatewayIngress)
+    - [Deploy/Pipeline](#DeployPipeline)
+    - [Zerodowntime deploy (Readiness probe)](#Zerodowntime-deploy-(Readiness-probe))
     - [Selfhealing (liveness probe)](#Selfhealing-(liveness-probe))
 
 # 서비스 시나리오
