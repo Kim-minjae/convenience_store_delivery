@@ -7,6 +7,10 @@ spring:
 
 spring:
   profiles: default
+  datasource:
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
   jpa:
     properties:
       hibernate:
@@ -51,7 +55,7 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: my-kafka:9092
+          brokers: my-kafka-0.my-kafka-headless.default.svc.cluster.local:9092
         streams:
           binder:
             configuration:

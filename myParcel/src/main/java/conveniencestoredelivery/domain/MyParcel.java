@@ -14,16 +14,19 @@ import lombok.Data;
 public class MyParcel {
 
         @Id
-        //@GeneratedValue(strategy=GenerationType.AUTO)
+        @GeneratedValue(strategy=GenerationType.AUTO)
         private Long myparcelId;
+
         private Long reservationId;
+
+        @GeneratedValue(strategy=GenerationType.AUTO)
         private Long invoiceId;
         private Integer customerId;
         private Long deliveryId;
         private Long parcelId;
         private String status;
         private Long updateTimeStamp;
-        private Object receiverAddress;
+        private String receiverAddress;
         private String senderAddress;
         private String dueDate;
 

@@ -30,7 +30,7 @@ public class MyParcelViewHandler {
             myParcel.setReservationId(reservered.getReservationId());
             myParcel.setCustomerId(reservered.getCustomerId());
             myParcel.setUpdateTimeStamp(reservered.getReservedTimestamp());
-            myParcel.setReceiverAddress(String.valueOf(reservered.getReceiverAddress()));
+            myParcel.setReceiverAddress(reservered.getReceiverAddress());
             // view 레파지 토리에 save
             myParcelRepository.save(myParcel);
 
