@@ -258,12 +258,29 @@ mvn spring-boot:run
 
 ![image](https://user-images.githubusercontent.com/112861813/200504869-8b9cb4b7-4630-4486-8377-1da73c875b07.png)
 
+![image](https://user-images.githubusercontent.com/112861813/200504974-4e922fa7-ca6d-411a-9579-3eebfdbe7471.png)
+
 
 ## Autosclae(HPA)
 
+![image](https://user-images.githubusercontent.com/112861813/200505035-377134b2-852d-447d-be50-76523e9219a2.png)
+
+
 ## Persistence Volume, ConfigMap, Secret
 
+![image](https://user-images.githubusercontent.com/112861813/200505133-a2b108a8-17ac-459e-9330-f245d7f4e276.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200505197-70803c54-eb91-4b4a-a632-30aaad62d7d3.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200505262-f99c7cfb-e8f3-4d6c-99f9-beeab2b0bd5b.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200505325-e9c59ab0-2977-476c-8024-72f6f0056dc4.png)
+
+
 ## Polyglot
+
+![image](https://user-images.githubusercontent.com/112861813/200505382-0357db4e-52f1-4609-a757-6172b51817c8.png)
+
 
 
 # 운영
@@ -295,9 +312,17 @@ mvn spring-boot:run
 
 ## Zerodowntime deploy (Readiness probe)
 
+![image](https://user-images.githubusercontent.com/112861813/200505483-6ba8bab1-2b37-4dad-88b2-7bc05147f03f.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200505530-163091bf-c18f-4008-88b4-d85dca97aefd.png)
+
+
+
 ## Selfhealing (liveness probe)
 
-![image](https://user-images.githubusercontent.com/112861813/200486658-884aba9b-e3e7-42eb-af52-d2230a036e74.png)
+![image](https://user-images.githubusercontent.com/112861813/200505593-b1bd8f14-add5-49cf-a88b-b36fef5c3496.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200505628-82d64544-89ab-4738-93b4-ef1dc337dd92.png)
 
 
 <details markdown="1">
