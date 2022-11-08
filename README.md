@@ -295,22 +295,35 @@ mvn spring-boot:run
 
 ## CI-CD 환경 구성도
 
+![image](https://user-images.githubusercontent.com/112861813/200486252-7add5e8d-0d4d-4895-bd72-4c30604dd2c8.png)
 
-![image](https://user-images.githubusercontent.com/112861813/200483908-09f8ecf5-6155-495c-97ae-19ac36d25042.png)
+![image](https://user-images.githubusercontent.com/112861813/200486324-71e25bc6-728a-4591-a6f5-e5763b940a40.png)
 
 
 ## Gateway/Ingress
 
+![image](https://user-images.githubusercontent.com/112861813/200486408-d069d1f0-f1ec-43d9-909a-76afbe2c9902.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200486447-6814c09d-3334-4b30-a666-552671fc79db.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200486482-01678a16-21a0-4f73-a307-986b82596d37.png)
+
+
 ## Deploy/Pipeline
 
-![image](https://user-images.githubusercontent.com/112861813/200485219-f3d5f00a-e857-4977-9692-c86b7153155b.png)
+![image](https://user-images.githubusercontent.com/112861813/200486541-27b2a789-f739-468f-aa3f-493bdea22cc0.png)
 
-![image](https://user-images.githubusercontent.com/112861813/200485246-8b5bdfa7-444c-42d7-a98d-c3e0579f36f7.png)
+![image](https://user-images.githubusercontent.com/112861813/200486583-7385032a-4863-47eb-b6c5-06d07d0fd6cd.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200486621-0a8bd773-c7ca-4df5-bd4f-f1fc48966498.png)
 
 
 ## Zerodowntime deploy (Readiness probe)
 
 ## Selfhealing (liveness probe)
+
+![image](https://user-images.githubusercontent.com/112861813/200486658-884aba9b-e3e7-42eb-af52-d2230a036e74.png)
+
 
 <details markdown="1">
 <summary>접기/펼치기</summary>
