@@ -226,8 +226,9 @@ mvn spring-boot:run
 
 ## DB 구성도
 
-![image](https://user-images.githubusercontent.com/112861813/200485343-1a1f7cd6-907d-4cfe-8b7c-9fb90ee46e22.png)
-    
+![image](https://user-images.githubusercontent.com/112861813/200506609-86390604-c63f-4abc-8f8d-5e6986656b08.png)
+
+
 
 ## Saga/비동기식호출
 
@@ -243,14 +244,16 @@ mvn spring-boot:run
 
 ## Compensation/Correlation
 
-![image](https://user-images.githubusercontent.com/112861813/200504769-fce2ab77-01c5-4cf3-8b92-3121da107ef2.png)
+![image](https://user-images.githubusercontent.com/112861813/200506664-a9053753-6f24-4f26-874b-26722bccd49e.png)
+
 
 
 ## Request/Response
 
-![image](https://user-images.githubusercontent.com/112861813/200485132-d7967dbb-a345-4ab3-972c-74efaae806a6.png)
+![image](https://user-images.githubusercontent.com/112861813/200506731-0bb71738-d23b-49d8-a4cb-c3bb74d99991.png)
 
-![image](https://user-images.githubusercontent.com/112861813/200485159-69318cae-747f-41fb-8175-a7afe618e09c.png)
+![image](https://user-images.githubusercontent.com/112861813/200506768-8380c7e2-2f97-48f6-8c6c-01ef68a2430b.png)
+
 
 ## Circuit Breaker
 
