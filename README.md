@@ -281,6 +281,10 @@ mvn spring-boot:run
 
 ## Request/Response
 
+![image](https://user-images.githubusercontent.com/112861813/200485132-d7967dbb-a345-4ab3-972c-74efaae806a6.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200485159-69318cae-747f-41fb-8175-a7afe618e09c.png)
+
 ## Circuit Breaker
 
 ## Autosclae(HPA)
@@ -301,6 +305,11 @@ mvn spring-boot:run
 ## Gateway/Ingress
 
 ## Deploy/Pipeline
+
+![image](https://user-images.githubusercontent.com/112861813/200485219-f3d5f00a-e857-4977-9692-c86b7153155b.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200485246-8b5bdfa7-444c-42d7-a98d-c3e0579f36f7.png)
+
 
 ## Zerodowntime deploy (Readiness probe)
 
