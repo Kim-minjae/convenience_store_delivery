@@ -243,11 +243,8 @@ mvn spring-boot:run
 
 ## DB 구성도
 
-![image](https://user-images.githubusercontent.com/112861813/200268933-13bf47fb-d49a-493a-897c-3a7fba404df4.png)
-
-    - Polyglot ?
+![image](https://user-images.githubusercontent.com/112861813/200485343-1a1f7cd6-907d-4cfe-8b7c-9fb90ee46e22.png)
     
-   
 
 ## Saga/비동기식호출
 
