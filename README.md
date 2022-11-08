@@ -10,7 +10,7 @@
 - 체크포인트 : https://workflowy.com/s/assessment-check-po/T5YrzcMewfo4J6LW
 
 
-# Table of contents  <-- @@@ 내용 
+# Table of contents
 
 - [편의점 택배](#---)
   - [서비스 시나리오](#서비스-시나리오)
@@ -20,16 +20,17 @@
     - [서비스 개념도](#서비스-개념도)
     - [서비스 구성도](#서비스-구성도)
     - [DB 구성도](#DB-구성도)
-    - [Saga/비동기식 호출](#Saga/비동기식-호출)
+    - [Saga/비동기식 호출](#Saga/비동기식호출)
     - [CQRS](#CQRS)
     - [Compensation/Correlation](#Compensation/Correlation)
-    - 4.Request / Response
-    - 5.Circuit Breaker
-    - 8.Autosclae(HPA)
-    - 10.Persistence Volume, ConfigMap, Secret
-    - 11.Polyglot
+    - [Request/Response](#Request/Response)
+    - [Circuit Breaker](#Circuit-Breaker)
+    - [Autosclae(HPA)](#Autosclae(HPA))
+    - [Persistence Volume, ConfigMap, Secret](#Persistence-Volume,-ConfigMap,-Secret)
+    - [Polyglot](#Polyglot)
 
   - [운영](#운영)
+    - [CI/CD 환경 구성도](#CI-CD-환경-구성도)
     - 6.Gateway/Ingress
     - 7.Deploy/Pipeline
     - 9.Zero-downtime deploy (Readiness probe)
@@ -248,7 +249,7 @@ mvn spring-boot:run
     
    
 
-## Saga/비동기식 호출
+## Saga/비동기식호출
 
 
 ## CQRS
@@ -278,14 +279,25 @@ mvn spring-boot:run
 
 ## Compensation/Correlation
 
+## Request/Response
 
-## -----------------여기까지 수정 기능 캡쳐 필요
+## Circuit Breaker
+
+## Autosclae(HPA)
+
+## Persistence Volume, ConfigMap, Secret
+
+## Polyglot
+
 
 # 운영
 
 ## CI-CD 환경 구성도
 
 ![image](https://user-images.githubusercontent.com/112861813/200269343-8ea9ea2b-13ee-4067-91cc-d6437f71cee3.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200483908-09f8ecf5-6155-495c-97ae-19ac36d25042.png)
+
 
 
 ## 추가  ->>> 뭘 넣어야 할지 모르겠음 ㅠㅠ
