@@ -31,10 +31,10 @@
 
   - [운영](#운영)
     - [CI/CD 환경 구성도](#CI-CD-환경-구성도)
-    - 6.Gateway/Ingress
-    - 7.Deploy/Pipeline
-    - 9.Zero-downtime deploy (Readiness probe)
-    - 12.Self-healing (liveness probe)
+    - [Gateway/Ingress](#Gateway/Ingress)
+    - [Deploy/Pipeline](#Deploy/Pipeline)
+    - [Zerodowntime deploy (Readiness probe)](#Zerodowntime-deploy(Readiness-probe))
+    - [Selfhealing (liveness probe)](#Selfhealing-(liveness-probe))
 
 # 서비스 시나리오
 
@@ -302,9 +302,9 @@ mvn spring-boot:run
 
 ## Deploy/Pipeline
 
-## Zero-downtime deploy (Readiness probe)
+## Zerodowntime deploy (Readiness probe)
 
-## Self-healing (liveness probe)
+## Selfhealing (liveness probe)
 
 
 ## DDD 의 적용
