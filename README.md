@@ -231,14 +231,14 @@ mvn spring-boot:run
 
 ## Saga/비동기식호출
 
-![image](https://user-images.githubusercontent.com/112861813/200504537-99833ecc-e15f-4394-ad02-9a5004fc3433.png)
+![image](https://user-images.githubusercontent.com/112861813/200506323-cab938ae-f8d1-466c-ab70-8f81604760f7.png)
 
 
 ## CQRS
 
-![image](https://user-images.githubusercontent.com/112861813/200504619-83fa0861-fe44-4520-a78f-41da5f6b64ad.png)
+![image](https://user-images.githubusercontent.com/112861813/200506441-ccf010dc-2ed5-40f7-a6db-5b7899c99e69.png)
 
-![image](https://user-images.githubusercontent.com/112861813/200504735-dbd1b059-7525-438f-9850-f79bf1bf2ac5.png)
+![image](https://user-images.githubusercontent.com/112861813/200506474-523bc5f0-bc91-449f-9c2b-3323f19e4746.png)
 
 
 ## Compensation/Correlation
