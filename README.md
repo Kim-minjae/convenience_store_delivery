@@ -294,23 +294,17 @@ mvn spring-boot:run
 
 ## CI-CD 환경 구성도
 
-![image](https://user-images.githubusercontent.com/112861813/200269343-8ea9ea2b-13ee-4067-91cc-d6437f71cee3.png)
 
 ![image](https://user-images.githubusercontent.com/112861813/200483908-09f8ecf5-6155-495c-97ae-19ac36d25042.png)
 
 
+## Gateway/Ingress
 
-## 추가  ->>> 뭘 넣어야 할지 모르겠음 ㅠㅠ
+## Deploy/Pipeline
 
+## Zero-downtime deploy (Readiness probe)
 
-
-
-
-
-
-
-
-
+## Self-healing (liveness probe)
 
 
 ## DDD 의 적용
