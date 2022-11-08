@@ -20,11 +20,11 @@
     - 서비스 개념도
     - 서비스 구성도
     - DB 구성도
-    - 1. Saga (비동기식 호출)
-    - 2. CQRS
-    - 3. Compensation / Correlation
-    - 4. Request / Response
-    - 5. Circuit Breaker
+    - 1.Saga (비동기식 호출)
+    - 2.CQRS
+    - 3.Compensation / Correlation
+    - 4.Request / Response
+    - 5.Circuit Breaker
     - [DDD 의 적용](#ddd-의-적용)
     - [폴리글랏 퍼시스턴스](#폴리글랏-퍼시스턴스)
     - [폴리글랏 프로그래밍](#폴리글랏-프로그래밍)
