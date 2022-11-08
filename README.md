@@ -26,8 +26,8 @@
     - 4.Request / Response
     - 5.Circuit Breaker
     - 8.Autosclae(HPA)
-    - 10. Persistence Volume, ConfigMap, Secret
-    - 11. Polyglot
+    - 10.Persistence Volume, ConfigMap, Secret
+    - 11.Polyglot
 
   - [운영](#운영)
     - 6.Gateway/Ingress
@@ -232,7 +232,7 @@ cd warehouse
 mvn spring-boot:run 
 
 ```
-## 서비스 개념도
+## 서비스 개념도:
 
 ![image](https://user-images.githubusercontent.com/112861813/200238022-07da912f-d526-4af8-881f-1079d3f6e11e.png)
 
