@@ -95,21 +95,15 @@ public class Delivery  {
     @PostPersist
     public void onPostPersist(){
 
-
         Gathered gathered = new Gathered(this);
         gathered.publishAfterCommit();
-
-
 
         CvsDeliveryCompleted cvsDeliveryCompleted = new CvsDeliveryCompleted(this);
         cvsDeliveryCompleted.publishAfterCommit();
 
 
-
         DeliveryCompleted deliveryCompleted = new DeliveryCompleted(this);
         deliveryCompleted.publishAfterCommit();
-
-
 
         Returned returned = new Returned(this);
         returned.publishAfterCommit();

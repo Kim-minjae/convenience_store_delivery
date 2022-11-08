@@ -29,14 +29,8 @@ public class PolicyHandler{
         InvoiceIssued event = invoiceIssued;
         System.out.println("\n\n##### listener Gather : " + invoiceIssued + "\n\n");
 
-
-        
-
         // Sample Logic //
         Delivery.gather(event);
-        
-
-        
 
     }
 
