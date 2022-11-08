@@ -230,16 +230,15 @@ mvn spring-boot:run
 
 ![image](https://user-images.githubusercontent.com/112861813/200238022-07da912f-d526-4af8-881f-1079d3f6e11e.png)
 
-## 구성도(?)
+## 서비스 구성도
 
 ![image](https://user-images.githubusercontent.com/112861813/200268856-2c65ecc3-884c-41d4-8beb-92ef6f58de4b.png)
 
-## DB 구성도(?)
+## DB 구성
 
 ![image](https://user-images.githubusercontent.com/112861813/200268933-13bf47fb-d49a-493a-897c-3a7fba404df4.png)
 
-
-
+    - Polyglot ?
 
 ## CQRS
 
