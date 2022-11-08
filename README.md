@@ -312,6 +312,13 @@ mvn spring-boot:run
 
 ## Selfhealing (liveness probe)
 
+<details markdown="1">
+<summary>접기/펼치기</summary>
+
+<!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
+
+
+
 
 ## DDD 의 적용
 
@@ -948,3 +955,4 @@ Request/Response 방식으로 구현하지 않았기 때문에 서비스가 더�
 ```
 
 
+</details>
