@@ -20,7 +20,7 @@
     - [서비스 개념도](#서비스-개념도)
     - [서비스 구성도](#서비스-구성도)
     - [DB 구성도](#DB-구성도)
-    - [1.Saga (비동기식 호출)](#1.Saga-/-비동기식-호출)
+    - [1.Saga/비동기식 호출)](#1.Saga/비동기식-호출)
     - [2.CQRS](#2.CQRS)
     - 3.Compensation / Correlation
     - 4.Request / Response
@@ -240,7 +240,7 @@ mvn spring-boot:run
 
 ![image](https://user-images.githubusercontent.com/112861813/200268856-2c65ecc3-884c-41d4-8beb-92ef6f58de4b.png)
 
-## DB 구성
+## DB 구성도
 
 ![image](https://user-images.githubusercontent.com/112861813/200268933-13bf47fb-d49a-493a-897c-3a7fba404df4.png)
 
@@ -248,7 +248,7 @@ mvn spring-boot:run
     
    
 
-## 1.Saga / 비동기식 호출
+## 1.Saga/비동기식 호출
 
 
 ## 2.CQRS
