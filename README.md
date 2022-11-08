@@ -10,7 +10,7 @@
 - 체크포인트 : https://workflowy.com/s/assessment-check-po/T5YrzcMewfo4J6LW
 
 
-# Table of contents  <-- @@@ 내용 
+# Table of contents
 
 - [편의점 택배](#---)
   - [서비스 시나리오](#서비스-시나리오)
@@ -20,20 +20,21 @@
     - [서비스 개념도](#서비스-개념도)
     - [서비스 구성도](#서비스-구성도)
     - [DB 구성도](#DB-구성도)
-    - [1.Saga (비동기식 호출)](#1.Saga-/-비동기식-호출)
-    - [2.CQRS](#2.CQRS)
-    - 3.Compensation / Correlation
-    - 4.Request / Response
-    - 5.Circuit Breaker
-    - 8.Autosclae(HPA)
-    - 10.Persistence Volume, ConfigMap, Secret
-    - 11.Polyglot
+    - [Saga/비동기식 호출](#Saga비동기식호출)
+    - [CQRS](#CQRS)
+    - [Compensation/Correlation](#CompensationCorrelation)
+    - [Request/Response](#RequestResponse)
+    - [Circuit Breaker](#Circuit-Breaker)
+    - [Autosclae(HPA)](#Autosclae(HPA))
+    - [Persistence Volume, ConfigMap, Secret](#Persistence-Volume,-ConfigMap,-Secret)
+    - [Polyglot](#Polyglot)
 
   - [운영](#운영)
-    - 6.Gateway/Ingress
-    - 7.Deploy/Pipeline
-    - 9.Zero-downtime deploy (Readiness probe)
-    - 12.Self-healing (liveness probe)
+    - [CI/CD 환경 구성도](#CI-CD-환경-구성도)
+    - [Gateway/Ingress](#GatewayIngress)
+    - [Deploy/Pipeline](#DeployPipeline)
+    - [Zerodowntime deploy (Readiness probe)](#Zerodowntime-deploy-(Readiness-probe))
+    - [Selfhealing (liveness probe)](#Selfhealing-(liveness-probe))
 
 # 서비스 시나리오
 
@@ -240,18 +241,15 @@ mvn spring-boot:run
 
 ![image](https://user-images.githubusercontent.com/112861813/200268856-2c65ecc3-884c-41d4-8beb-92ef6f58de4b.png)
 
-## DB 구성
+## DB 구성도
 
-![image](https://user-images.githubusercontent.com/112861813/200268933-13bf47fb-d49a-493a-897c-3a7fba404df4.png)
-
-    - Polyglot ?
+![image](https://user-images.githubusercontent.com/112861813/200485343-1a1f7cd6-907d-4cfe-8b7c-9fb90ee46e22.png)
     
-   
 
-## 1.Saga / 비동기식 호출
+## Saga/비동기식호출
 
 
-## 2.CQRS
+## CQRS
 
 - 택배 배송 예약, 배송 송장 발급 및 결제, 배송 현황 등 총 Status 에 대하여 고객(Customer)이 조회 할 수 있도록 CQRS 로 구현하였다.
 
@@ -276,25 +274,61 @@ mvn spring-boot:run
 
 - view Page 
 
+## Compensation/Correlation
 
-## -----------------여기까지 수정 기능 캡쳐 필요
+## Request/Response
+
+![image](https://user-images.githubusercontent.com/112861813/200485132-d7967dbb-a345-4ab3-972c-74efaae806a6.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200485159-69318cae-747f-41fb-8175-a7afe618e09c.png)
+
+## Circuit Breaker
+
+## Autosclae(HPA)
+
+## Persistence Volume, ConfigMap, Secret
+
+## Polyglot
+
 
 # 운영
 
 ## CI-CD 환경 구성도
 
-![image](https://user-images.githubusercontent.com/112861813/200269343-8ea9ea2b-13ee-4067-91cc-d6437f71cee3.png)
+![image](https://user-images.githubusercontent.com/112861813/200486252-7add5e8d-0d4d-4895-bd72-4c30604dd2c8.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200486324-71e25bc6-728a-4591-a6f5-e5763b940a40.png)
 
 
-## 추가  ->>> 뭘 넣어야 할지 모르겠음 ㅠㅠ
+## Gateway/Ingress
+
+![image](https://user-images.githubusercontent.com/112861813/200486408-d069d1f0-f1ec-43d9-909a-76afbe2c9902.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200486447-6814c09d-3334-4b30-a666-552671fc79db.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200486482-01678a16-21a0-4f73-a307-986b82596d37.png)
 
 
+## Deploy/Pipeline
+
+![image](https://user-images.githubusercontent.com/112861813/200486541-27b2a789-f739-468f-aa3f-493bdea22cc0.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200486583-7385032a-4863-47eb-b6c5-06d07d0fd6cd.png)
+
+![image](https://user-images.githubusercontent.com/112861813/200486621-0a8bd773-c7ca-4df5-bd4f-f1fc48966498.png)
 
 
+## Zerodowntime deploy (Readiness probe)
+
+## Selfhealing (liveness probe)
+
+![image](https://user-images.githubusercontent.com/112861813/200486658-884aba9b-e3e7-42eb-af52-d2230a036e74.png)
 
 
+<details markdown="1">
+<summary>접기/펼치기</summary>
 
-
+<!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
 
 
 
@@ -934,3 +968,4 @@ Request/Response 방식으로 구현하지 않았기 때문에 서비스가 더�
 ```
 
 
+</details>
