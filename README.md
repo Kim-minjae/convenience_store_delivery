@@ -17,7 +17,7 @@
   - [체크포인트](#체크포인트)
   - [분석/설계](#분석설계)
   - [구현:](#구현-)
-    - 서비스 개념도(#서비스-개념도)
+    - 서비스 개념도
     - 서비스 구성도
     - DB 구성도
     - 1.Saga (비동기식 호출)
@@ -25,17 +25,15 @@
     - 3.Compensation / Correlation
     - 4.Request / Response
     - 5.Circuit Breaker
-    - [DDD 의 적용](#ddd-의-적용)
-    - [폴리글랏 퍼시스턴스](#폴리글랏-퍼시스턴스)
-    - [폴리글랏 프로그래밍](#폴리글랏-프로그래밍)
-    - [동기식 호출 과 Fallback 처리](#동기식-호출-과-Fallback-처리)
-    - [비동기식 호출 과 Eventual Consistency](#비동기식-호출-과-Eventual-Consistency)
+    - 8.Autosclae(HPA)
+    - 10. Persistence Volume, ConfigMap, Secret
+    - 11. Polyglot
+
   - [운영](#운영)
-    - [CI/CD 설정](#cicd설정)
-    - [동기식 호출 / 서킷 브레이킹 / 장애격리](#동기식-호출-서킷-브레이킹-장애격리)
-    - [오토스케일 아웃](#오토스케일-아웃)
-    - [무정지 재배포](#무정지-재배포)
-  - [신규 개발 조직의 추가](#신규-개발-조직의-추가)
+    - 6.Gateway/Ingress
+    - 7.Deploy/Pipeline
+    - 9.Zero-downtime deploy (Readiness probe)
+    - 12.Self-healing (liveness probe)
 
 # 서비스 시나리오
 
