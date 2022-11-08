@@ -198,7 +198,7 @@
 
 ## 헥사고날 아키텍처 다이어그램 도출
    
-   ![image](https://user-images.githubusercontent.com/112861813/200229181-27787e68-5def-4cf7-a135-289c670c0f3d.png)
+![image](https://user-images.githubusercontent.com/112861813/200458272-bc2c26a4-7c4f-4dd6-aad2-1a5836b7eb99.png)
 
 
 
